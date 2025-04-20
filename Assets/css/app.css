@@ -43,7 +43,7 @@
   background-color: #7b2ff7;
 }
 
-/* Responsive tweaks */
+/* Responsive */
 @media (max-width: 768px) {
   .top-gradient-img {
     width: 100px;
@@ -64,3 +64,20 @@
     top: 6px;
   }
 }
+
+
+.about-us-section {
+  position: relative;
+}
+
+.about-us-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(138, 71, 246, 0.1);
+  z-index: -1;
+}
+
