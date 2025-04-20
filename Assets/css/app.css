@@ -229,3 +229,64 @@ body {
   border-radius: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+
+.testimonial-section {
+  background: linear-gradient(to right, #ede6fa, #f9d9de);
+  color: #4f4f4f;
+}
+
+.dash-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #A084DC;
+  font-size: 0.875rem;
+}
+
+.dash-title::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background-color: #A084DC;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.testimonial-text {
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+.custom-nav-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.custom-nav-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.client-box {
+  background-color: #d5b9f1; /* Slightly deeper than background */
+  border-radius: 50px;
+}
+
+.client-box {
+  background-color: #e8dffc;
+  border-radius: 30px;
+}
+
+.testimonial-text {
+  color: #555;
+  font-size: 1rem;
+}
+
+.fixed-img-size {
+  max-height: 360px;
+  object-fit: cover;
+}
