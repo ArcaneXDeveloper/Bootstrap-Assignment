@@ -230,7 +230,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
+/*=====================testimonial Section============*/
 .testimonial-section {
   background: linear-gradient(to right, #ede6fa, #f9d9de);
   color: #4f4f4f;
@@ -257,6 +257,12 @@ body {
   font-size: 15px;
   line-height: 1.7;
   max-width: 500px;
+  color: #555;
+}
+
+.client-box {
+  background-color: #e8dffc;
+  border-radius: 30px;
 }
 
 .custom-nav-btn {
@@ -271,26 +277,64 @@ body {
   box-shadow: none;
 }
 
-.client-box {
-  background-color: #d5b9f1; /* Slightly deeper than background */
-  border-radius: 50px;
-}
-
-.client-box {
-  background-color: #e8dffc;
-  border-radius: 30px;
-}
-
-.testimonial-text {
-  color: #555;
-  font-size: 1rem;
-}
-
 .fixed-img-size {
   max-height: 360px;
   object-fit: cover;
 }
 
+.carousel-nav-wrapper {
+  position: relative;
+}
+
+.absolute-prev,
+.absolute-next {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.absolute-prev {
+  left: 16%;
+  top: 76%;
+}
+
+.absolute-next {
+  right: 65%;
+  top: 76%;
+}
+
+/* Responsive positioning */
+@media (max-width: 992px) {
+  .absolute-prev {
+    left: 25%;
+    top: 90%;
+  }
+
+  .absolute-next {
+    right: 55%;
+    top: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .absolute-prev {
+    left: 35%;
+    top: 32%;
+  }
+
+  .absolute-next {
+    right: 42%;
+    top: 32%;
+  }
+}
+
+@media (max-width: 576px) {
+  .absolute-prev,
+  .absolute-next {
+    top: 32%;
+  }
+}
 
 
 /*---------------Footer Section Social--------------*/
