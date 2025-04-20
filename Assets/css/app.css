@@ -77,7 +77,7 @@ body {
   }
 }
 
-
+/*================About us Section=============*/
 .about-us-section {
   position: relative;
 }
@@ -93,8 +93,16 @@ body {
   z-index: -1;
 }
 
+.filter-buttons {
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.12);
+  padding: 1rem 1.5rem;
+}
 
-/* Portfolio Section */
+
+
+/*================Portfolio Section============*/
 .text-purple {
   color: #8f50ff;
 }
@@ -154,4 +162,70 @@ body {
     grid-column: span 1 !important;
     grid-row: span 1 !important;
   }
+}
+
+
+/*================Price Section=============*/
+.price-card {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 15px;
+  padding: 20px;
+  height: 100%;
+}
+
+.price-card:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.price-card:hover h5,
+.price-card:hover p,
+.price-card:hover h3 {
+  color: #fff !important;
+}
+
+.price-card:hover .btn-orange {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.price-card.card-dark {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.price-card.card-dark:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.price-card.card-dark:hover h5,
+.price-card.card-dark:hover p,
+.price-card.card-dark:hover h3 {
+  color: #000 !important;
+}
+
+.price-card.card-dark:hover .btn-light {
+  background-color: #ff8542 !important;
+  color: #fff !important;
+}
+
+.price-card .btn {
+  padding: 10px 20px; 
+  border-radius: 10px;
+  font-size: 16px; 
+}
+
+.price-card.card-dark .btn-light {
+  padding: 10px 20px; 
+  font-size: 16px;
+}
+
+.btn-orange {
+  background-color: #ff8542;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
