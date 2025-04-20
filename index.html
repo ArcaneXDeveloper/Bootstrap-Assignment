@@ -53,7 +53,9 @@
                     <p class="text-muted mt-3 mb-4">
                         A Glimpse into the Past, a Snapshot of the Present.
                     </p>
-                    <a href="#" class="btn btn-danger px-4 py-2 rounded-pill">Get Started</a>
+                    <a href="#" class="btn btn-warning px-4 py-2 fw-semibold text-white"
+                        style="border-radius: 30px; background-color: #FF864C;">Get Started
+                    </a>
                 </div>
 
                 <!-- Carousel Right -->
@@ -138,9 +140,61 @@
     </section>
 
 
+    <section class="portfolio-section container my-5">
+        <h2 class="text-center fw-bold">
+            Our <span class="text-purple">Portfolio</span>
+        </h2>
+
+        <!-- Filter Buttons -->
+        <div class="d-flex justify-content-center flex-wrap my-4 gap-2">
+            <button class="tab-btn active">All</button>
+            <button class="tab-btn">Children</button>
+            <button class="tab-btn">Portrait</button>
+            <button class="tab-btn">Family</button>
+            <button class="tab-btn">Other</button>
+        </div>
+
+        <div class="portfolio__content">
+            <div class="row">
+                <div class="column vertical" data-category="children">
+                    <img src="./assets/images/portfolio-section/kid-1.png" alt="Image" class="_portfolio_grid_img">
+                </div>
+                <div class="column horizontal" data-category="children">
+                    <img src="./assets/images/portfolio-section/kid-2.png" alt="Image" class="_portfolio_grid_img">
+                </div>
+                <div class="column" data-category="portrait">
+                    <img src="./assets/images/portfolio-section/kid-3.png" alt="Image" class="_portfolio_grid_img">
+                </div>
+                <div class="column" data-category="portrait">
+                    <img src="./assets/images/portfolio-section/kid-4.png" alt="Image" class="_portfolio_grid_img">
+                </div>
+                <div class="column horizontal" data-category="family">
+                    <img src="./assets/images/portfolio-section/kid-5.png" alt="Image" class="_portfolio_grid_img">
+                </div>
+                <div class="column horizontal" data-category="family">
+                    <img src="./assets/images/portfolio-section/kid-6.png" alt="Image" class="_portfolio_grid_img">
+                </div>
+                <div class="column" data-category="other">
+                    <img src="./assets/images/portfolio-section/kid-7.png" alt="Image" class="_portfolio_grid_img">
+                </div>
+                <div class="column vertical" data-category="other">
+                    <img src="./assets/images/portfolio-section/kid-10.png" alt="Image" class="_portfolio_grid_img">
+                </div>
+                <div class="column" data-category="portrait">
+                    <img src="./assets/images/portfolio-section/kid-8.png" alt="Image" class="_portfolio_grid_img">
+                </div>
+                <div class="column horizontal" data-category="children">
+                    <img src="./assets/images/portfolio-section/kid-9.png" alt="Image" class="_portfolio_grid_img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Assets/js/app.js"></script>
 </body>
 
 </html>

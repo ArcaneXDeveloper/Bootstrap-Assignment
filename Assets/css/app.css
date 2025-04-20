@@ -1,4 +1,16 @@
-/* General */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
 .hero-section {
   background: linear-gradient(to right, #fff, #f7f6fd);
 }
@@ -81,3 +93,65 @@
   z-index: -1;
 }
 
+
+/* Portfolio Section */
+.text-purple {
+  color: #8f50ff;
+}
+
+.tab-btn {
+  border: none;
+  background: none;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tab-btn.active {
+  color: #8f50ff;
+  text-decoration: underline;
+}
+
+/* Portfolio Grid */
+.portfolio__content .row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  grid-auto-flow: dense;
+}
+
+.portfolio__content .row .column {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio__content .row .column img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.9375rem;
+  object-fit: cover;
+}
+
+.portfolio__content .row .column.vertical {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.portfolio__content .row .column.horizontal {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+@media (max-width: 768px) {
+  .portfolio__content .row .column.vertical,
+  .portfolio__content .row .column.horizontal {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+}
