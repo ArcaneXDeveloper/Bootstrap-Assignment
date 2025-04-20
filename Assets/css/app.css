@@ -1,0 +1,66 @@
+/* General */
+.hero-section {
+  background: linear-gradient(to right, #fff, #f7f6fd);
+}
+
+/* Gradient Decorations */
+/* .top-gradient-img {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 160px;
+  z-index: 1;
+}
+
+.purple-gradient-img {
+  position: absolute;
+  bottom: 90px;
+  left: 90px;
+  width: 150px;
+  z-index: 1;
+} */
+
+/* Underline after TIME */
+.inline-underline {
+  width: 160px;
+  height: 18px;
+  background: linear-gradient(to right, #7b2ff7, #f107a3);
+  border-radius: 10px;
+  margin-left: 65px;
+  position: relative;
+  top: -8px;
+}
+
+/* Carousel indicators */
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.carousel-indicators .active {
+  background-color: #7b2ff7;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .top-gradient-img {
+    width: 100px;
+    top: -10px;
+    left: -20px;
+  }
+
+  .purple-gradient-img {
+    width: 100px;
+    bottom: 100px;
+    left: 40px;
+  }
+
+  .inline-underline {
+    width: 80px;
+    height: 10px;
+    margin-left: 12px;
+    top: 6px;
+  }
+}
