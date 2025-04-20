@@ -290,3 +290,25 @@ body {
   max-height: 360px;
   object-fit: cover;
 }
+
+
+
+/*---------------Footer Section Social--------------*/
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.social-icon:hover {
+  background-color: #9b59b6;
+  color: #ffffff;
+}
